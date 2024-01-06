@@ -2,8 +2,7 @@
 
 Ce site est un simple squelette (front-end uniquement) de ce à quoi peut ressembler une extension du site de l'UPEC ayant pour but de faciliter le travail des responsables de stage ainsi que des tuteurs de stage tout au long du processus de recherche et d'accompagnement de stage des élèves.
 
-Il est possible de télécharger chacun des fichiers sur ce git,
-ou d'avoir un aperçu directement via ce lien et en suivant les instructions ci-dessous : https://replit.com/@nolan5/ProjetDev31
+Le site est disponible directement via ce lien et en suivant les instructions ci-dessous : https://replit.com/@nolan5/ProjetDev31
 
 ## Instructions
 
