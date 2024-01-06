@@ -1,3 +1,3 @@
-### Par-Stage
+# Par-Stage
 
-# [GPL License](LICENSE)
+### [GPL License](LICENSE)
