@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div id="login-box">
+    <div id="quit">
+      <a href="/index.html"><i class="fa fa-times w3-right w3-margin w3-hover-opacity" style="font-size:30px"></i></a>
+    </div>
+    <h1 class="connectaccount">Connexion</h1>
+    <div class="left">
+      <h1 style="opacity:0">Créer un compte</h1>
+
+      <input type="text" name="email" placeholder="E-mail" />
+      <input type="password" name="password" placeholder="Mot de passe" />
+
+    </div>
+
+    <div class="right">
+
+      <button class="social-signin facebook">Connecter avec facebook</button>
+      <button class="social-signin twitter">Connecter avec X</button>
+      <button class="social-signin google">Connecter avec Google</button>
+
+    </div>
+    <div class="or">OU</div>
+
+    <div class="connect">
+      <a href="/Accueil.html"><input type="submit" id="RS" name="signup_submit" value="Se connecter" /></a>
+      <br><b class="RSC">En tant que Responsable</b>
+    </div>
+
+    <div class="connect">
+      <a href="/AccueilT.html"><input type="submit" id="tuteur" name="signup_submit" value="Se connecter" /></a>
+    </div>
+    <div class="tuteurC">
+      <b>En tant que Tuteur</b>
+    </div>
+
+    <div class="create">
+      <p>Vous n'avez pas de compte ? <a href="/Create.html">Créer un compte</a>
+      <p>
+    </div>
+  </div>
+
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
+    *:focus {
+      outline: none;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #DDD;
+      font-size: 16px;
+      color: #222;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+    }
+
+    #login-box {
+      position: relative;
+      margin: 5% auto;
+      width: 600px;
+      height: 450px;
+      background-color: #FFF;
+      border-radius: 3px;
+      backdrop-filter: blur(15px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    .left {
+      position: absolute;
+      top: 0;
+      left: 0;
+      box-sizing: border-box;
+      padding: 40px;
+      width: 300px;
+      height: 400px;
+    }
+
+    .connectaccount {
+      position: relative;
+      left: 38%;
+      top: 9%;
+      font-weight: 300;
+      font-size: 28px;
+    }
+
+    h1 {
+      margin: 0 0 20px 0;
+      font-weight: 300;
+      font-size: 28px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      display: block;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      padding: 4px;
+      width: 220px;
+      height: 32px;
+      border: none;
+      border-bottom: 1px solid #AAA;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      transition: 0.2s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      border-bottom: 2px solid #16a085;
+      color: #16a085;
+      transition: 0.2s ease;
+    }
+
+    input[name="email"] {
+      margin-top: 80px;
+    }
+
+    input[name="password"] {
+      margin-top: 40px;
+    }
+
+    input[type="submit"] {
+      position: relative;
+      width: 140px;
+      height: 32px;
+      top: -20px;
+      left: -160px;
+      background: linear-gradient(to bottom right, #16a085, #5BC42A);
+      border: none;
+      border-radius: 2%;
+      color: #FFF;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      opacity: 0.8;
+      transition: 0.1s ease;
+      cursor: pointer;
+    }
+
+    #tuteur {
+      left: 110px;
+      top: -75px;
+    }
+
+    input[type="submit"]:hover,
+    input[type="submit"]:focus {
+      opacity: 1;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      transition: 0.1s ease;
+    }
+
+    input[type="submit"]:active {
+      opacity: 0.8;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+      transition: 0.1s ease;
+    }
+
+    .or {
+      position: absolute;
+      top: 210px;
+      left: 280px;
+      width: 40px;
+      height: 40px;
+      background: #DDD;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      line-height: 40px;
+      text-align: center;
+    }
+
+    .right {
+      position: absolute;
+      top: 117px;
+      right: 0;
+      box-sizing: border-box;
+      padding: 40px;
+      width: 300px;
+      height: 500px;
+      background: url('https://goo.gl/YbktSj');
+      background-size: cover;
+      background-position: center;
+      border-radius: 0 2px 2px 0;
+    }
+
+    .quit {
+      position: relative;
+      top: 0;
+      left: 50px;
+    }
+
+    .connect {
+      position: relative;
+      margin-left: 30%;
+      top: 315px;
+      left: 90px;
+    }
+
+    .create {
+      position: relative;
+      top: 20px;
+      left: 23%;
+    }
+
+    .RSC {
+      margin-left: -180px;
+    }
+
+    .tuteurC {
+      position: relative;
+      margin-left: 385px;
+      margin-top: 259px;
+    }
+
+    p>a {
+      color: blue;
+      opacity: 0.7;
+    }
+
+    p>a:hover,
+    p>a:focus {
+      opacity: 1;
+    }
+
+    p>a:active {
+      opacity: 0.7;
+    }
+
+    button.social-signin {
+      margin-bottom: 20px;
+      width: 220px;
+      height: 36px;
+      border: none;
+      border-radius: 2px;
+      color: #FFF;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      opacity: 0.8;
+      transition: 0.2s ease;
+      cursor: pointer;
+    }
+
+    button.social-signin:hover,
+    button.social-signin:focus {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      transition: 0.2s ease;
+      opacity: 1;
+    }
+
+    button.social-signin:active {
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+      transition: 0.2s ease;
+      opacity: 0.8;
+    }
+
+    button.social-signin.facebook {
+      background: #32508E;
+    }
+
+    button.social-signin.twitter {
+      background: black;
+    }
+
+    button.social-signin.google {
+      background: #DD4B39;
+    }
+  </style>
+</body>
+
+</html>

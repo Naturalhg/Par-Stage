@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Raleway", sans-serif
+    }
+  </style>
+</head>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+    title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main">
+
+    <!-- Header -->
+    <header id="portfolio">
+      <a href="/Stages.html"><i class="fa fa-remove w3-right w3-margin w3-hover-opacity"
+          style="font-size:30px;"></i></a>
+      <a href="/Stages.html"><img src="https://tse1.mm.bing.net/th?id=OIP.FLOndSWGXikVhf2p-DsdzwHaDL&pid=Api&P=0&h=180"
+          style="width:100px; margin:20px" class="w3-round"></a>
+      <div class="w3-container w3-section w3-bottombar w3-padding-16">
+        <h2 style="margin:0 10% 50px 10%; text-align:center">Sélectionnez les étudiants à qui partager le stage choisi
+          puis cliquez sur<br><b>"Partager aux étudiants"</b></h2>
+      </div>
+    </header>
+    <div class="w3-container">
+      <b class="w3-right">
+        <form>
+          <span class="w3-margin-right">Mots-clés :</span>
+          <a onclick="updateBtn1()" value="white" id="i1"><input type="button" value="Réseau" id="btn1"
+              class="w3-button w3-white"></a>
+          <a onclick="updateBtn2()" value="white" id="i2"><input type="button" value="Web" id="btn2"
+              class="w3-button w3-white"></a>
+          <a onclick="updateBtn3()" value="white" id="i3"><input type="button" value="Mobile" id="btn3"
+              class="w3-button w3-white"></a>
+        </form>
+      </b>
+      <h4>Etudiants disponibles (612)</h4>
+    </div>
+    <div class="w3-container">
+      <b class="w3-right">
+        <form>
+          <span class="w3-margin-right">Technos :</span>
+          <a onclick="updateBtn4()" value="white" id="i4"><input type="button" value="Javascript" id="btn4"
+              class="w3-button w3-white"></a>
+          <a onclick="updateBtn5()" value="white" id="i5"><input type="button" value="C++" id="btn5"
+              class="w3-button w3-white"></a>
+          <a onclick="updateBtn6()" value="white" id="i6"><input type="button" value="Html" id="btn6"
+              class="w3-button w3-white"></a>
+        </form>
+      </b>
+    </div>
+    <hr>
+
+    <div class="button-container">
+      <a href="/ValidationP.html" title="Partager à ces élèves"><button id="share"><i
+            class="fa fa-share w3-margin-right" style="font-size:18px"></i>Partager aux étudiants</button></a>
+    </div>
+
+    <!-- First Photo Grid -->
+    <input type="checkbox" />
+    <div class="w3-margin-bottom" style="margin-left:20%" id="ETU">
+      <div class="w3-row w3-container w3-margin-bottom" id="Etudiants">
+        <div class="w3-container w3-third">
+          <img src="https://cdn.pixabay.com/photo/2017/01/30/23/52/female-2022387_1280.png" alt="Norway"
+            style="width:40%">
+          <b style="white-space:nowrap">Emma Claude</b>
+        </div>
+        <div class="w3-container w3-third w3-padding">
+          <span class="w3-tag w3-light-green w3-small w3-margin-bottom" style="padding:5px">BD</span>
+          <span class="w3-tag w3-lime w3-small w3-margin-bottom" style="padding:5px">Support</span>
+          <br>
+          <span class="w3-tag w3-green w3-small w3-margin-bottom" style="padding:5px">SQL</span>
+        </div>
+        <div class="w3-container w3-third">
+          <p>Stage : <b>8 semaines</b></p>
+          <p>Lieu : <b>Paris</b></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Photo Grid-->
+    <input type="checkbox" />
+    <div class="w3-margin-bottom" style="margin-left:20%" id="ETU">
+      <div class="w3-row w3-container w3-margin-bottom" id="Etudiants">
+        <div class="w3-container w3-third">
+          <img src="https://cdn.pixabay.com/photo/2017/01/31/21/23/avatar-2027366_1280.png" alt="Norway"
+            style="width:40%">
+          <b style="white-space:nowrap">Noham Geoffroy</b>
+        </div>
+        <div class="w3-container w3-third w3-padding">
+          <span class="w3-tag w3-cyan w3-small w3-margin-bottom" style="padding:5px">Test</span>
+          <br>
+          <span class="w3-tag w3-teal w3-small w3-margin-bottom" style="padding:5px">Java</span>
+          <span class="w3-tag w3-blue w3-small w3-margin-bottom" style="padding:5px">Python</span>
+          <span class="w3-tag w3-grey w3-small w3-margin-bottom" style="padding:5px">C++</span>
+        </div>
+        <div class="w3-container w3-third">
+          <p>Stage : <b>12 semaines</b></p>
+          <p>Lieu : <b>Fontainebleau</b></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third Photo Grid-->
+    <input type="checkbox" />
+    <div class="w3-margin-bottom" style="margin-left:20%" id="ETU">
+      <div class="w3-row w3-container w3-margin-bottom" id="Etudiants">
+        <div class="w3-container w3-third">
+          <img src="https://cdn.pixabay.com/photo/2023/03/15/09/32/woman-7854120_1280.png" alt="Norway"
+            style="width:40%">
+          <b style="white-space:nowrap">Odile Léandre</b>
+        </div>
+        <div class="w3-container w3-third w3-padding">
+          <span class="w3-tag w3-light-blue w3-small w3-margin-bottom" style="padding:5px">Web</span>
+          <br>
+          <span class="w3-tag w3-blue w3-small w3-margin-bottom" style="padding:5px">Html</span>
+          <span class="w3-tag w3-blue-grey w3-small w3-margin-bottom" style="padding:5px">Css</span>
+        </div>
+        <div class="w3-container w3-third">
+          <p>Stage : <b>14 semaines</b></p>
+          <p>Lieu : <b>Paris</b></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fourth Photo Grid-->
+    <input type="checkbox" />
+    <div class="w3-margin-bottom" style="margin-left:20%" id="ETU">
+      <div class="w3-row w3-container w3-margin-bottom" id="Etudiants">
+        <div class="w3-container w3-third">
+          <img src="https://cdn.pixabay.com/photo/2017/01/31/21/22/avatar-2027363_1280.png" alt="Norway"
+            style="width:40%">
+          <b style="white-space:nowrap">Rémy Morgan</b>
+        </div>
+        <div class="w3-container w3-third w3-padding">
+          <span class="w3-tag w3-purple w3-small w3-margin-bottom" style="padding:5px">Mobile</span>
+          <span class="w3-tag w3-light-blue w3-small w3-margin-bottom" style="padding:5px">Web</span>
+          <br>
+          <span class="w3-tag w3-teal w3-small w3-margin-bottom" style="padding:5px">Javascript</span>
+          <span class="w3-tag w3-blue w3-small w3-margin-bottom" style="padding:5px">Html</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom" style="padding:5px">PHP</span>
+        </div>
+        <div class="w3-container w3-third">
+          <p>Stage : <b>8 semaines</b></p>
+          <p>Lieu : <b>Paris, Fontainebleau</b></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fifth Photo Grid-->
+    <input type="checkbox" />
+    <div class="w3-margin-bottom" style="margin-left:20%" id="ETU">
+      <div class="w3-row w3-container w3-margin-bottom" id="Etudiants">
+        <div class="w3-container w3-third">
+          <img src="https://cdn.pixabay.com/photo/2023/02/16/10/14/woman-7793451_1280.png" alt="Norway"
+            style="width:40%">
+          <b style="white-space:nowrap">Marie Paula</b>
+        </div>
+        <div class="w3-container w3-third w3-padding">
+          <span class="w3-tag w3-lime w3-small w3-margin-bottom" style="padding:5px">Support</span>
+          <span class="w3-tag w3-deep-purple w3-small w3-margin-bottom" style="padding:5px">Réseau</span>
+          <br>
+          <span class="w3-tag w3-grey w3-small w3-margin-bottom" style="padding:5px">C++</span>
+        </div>
+        <div class="w3-container w3-third">
+          <p>Stage : <b>10 semaines</b></p>
+          <p>Lieu : <b>Fontainebleau</b></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="w3-center w3-padding-32">
+      <div class="w3-bar">
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+        <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-dark-grey">
+      <div class="w3-row-padding">
+        <div class="w3-third">
+          <h3>FOOTER</h3>
+          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue
+            gravida diam non fringilla.</p>
+          <p>Powered by Samy and Nolan</p>
+        </div>
+
+        <div class="w3-third">
+          <h3>BLOG POSTS</h3>
+          <ul class="w3-ul w3-hoverable">
+            <li class="w3-padding-16">
+              <img src="https://cdn.pixabay.com/photo/2013/03/30/00/10/news-97862_1280.png"
+                class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Lorem</span>
+              <span>Sed mattis nunc</span>
+            </li>
+            <li class="w3-padding-16">
+              <img src="https://cdn.pixabay.com/photo/2013/07/12/15/50/memo-150388_640.png"
+                class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Ipsum</span><br>
+              <span>Praes tinci sed</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="w3-third">
+          <h3>POPULAR TAGS</h3>
+          <p>
+            <span class="w3-tag w3-grey w3-small w3-margin-bottom">Travel</span> <span
+              class="w3-tag w3-grey w3-small w3-margin-bottom">New York</span> <span
+              class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
+            <span class="w3-tag w3-grey w3-small w3-margin-bottom">IKEA</span> <span
+              class="w3-tag w3-grey w3-small w3-margin-bottom">NORWAY</span> <span
+              class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
+            <span class="w3-tag w3-grey w3-small w3-margin-bottom">Ideas</span> <span
+              class="w3-tag w3-grey w3-small w3-margin-bottom">Baby</span> <span
+              class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
+            <span class="w3-tag w3-grey w3-small w3-margin-bottom">News</span> <span
+              class="w3-tag w3-grey w3-small w3-margin-bottom">Clothing</span> <span
+              class="w3-tag w3-grey w3-small w3-margin-bottom">Shopping</span>
+            <span class="w3-tag w3-grey w3-small w3-margin-bottom">Sports</span> <span
+              class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
+          </p>
+        </div>
+
+      </div>
+    </footer>
+
+    <div class="w3-black w3-center w3-padding-24">Réalisé par Samy et Nolan</div>
+
+    <!-- End page content -->
+  </div>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Script to add filters
+
+    var btn1 = document.getElementById("btn1");
+    var i1 = document.getElementById("i1");
+    var btn2 = document.getElementById("btn2");
+    var i2 = document.getElementById("i2");
+    var btn3 = document.getElementById("btn3");
+    var i3 = document.getElementById("i3");
+    var btn4 = document.getElementById("btn4");
+    var i4 = document.getElementById("i4");
+    var btn5 = document.getElementById("btn5");
+    var i5 = document.getElementById("i5");
+    var btn6 = document.getElementById("btn6");
+    var i6 = document.getElementById("i6");
+
+    function updateBtn1() {
+      if (i1.value == "white") {
+        btn1.className = "w3-button w3-white";
+        i1.value = "black";
+      } else {
+        btn1.className = "w3-button w3-deep-purple";
+        i1.value = "white";
+      }
+    }
+    function updateBtn2() {
+      if (i2.value === "white") {
+        btn2.className = "w3-button w3-white";
+        i2.value = "black";
+      } else {
+        btn2.className = "w3-button w3-light-blue";
+        i2.value = "white";
+      }
+    }
+    function updateBtn3() {
+      if (i3.value === "white") {
+        btn3.className = "w3-button w3-white";
+        i3.value = "black";
+      } else {
+        btn3.className = "w3-button w3-purple";
+        i3.value = "white";
+      }
+    }
+
+    function updateBtn4() {
+      if (i4.value === "white") {
+        btn4.className = "w3-button w3-white";
+        i4.value = "black";
+      } else {
+        btn4.className = "w3-button w3-teal";
+        i4.value = "white";
+      }
+    }
+    function updateBtn5() {
+      if (i5.value === "white") {
+        btn5.className = "w3-button w3-white";
+        i5.value = "black";
+      } else {
+        btn5.className = "w3-button w3-grey";
+        i5.value = "white";
+      }
+    }
+    function updateBtn6() {
+      if (i6.value === "white") {
+        btn6.className = "w3-button w3-white";
+        i6.value = "black";
+      } else {
+        btn6.className = "w3-button w3-blue";
+        i6.value = "white";
+      }
+    }
+  </script>
+
+  <style>
+    .hove {
+      padding: 5px;
+    }
+
+    .hove:hover {
+      box-shadow: -10px 10px 15px grey;
+      transition: 0.3s ease;
+    }
+
+    #share {
+      border-radius: 20% / 50%;
+      background: #FF2929;
+      color: white;
+      padding: 20px 30px 20px 30px;
+      border: none;
+    }
+
+    #ETU {
+      opacity: 0.6;
+      padding-top: 10px;
+      border-radius: 30% 0 0 30% / 60% 0 0 60%;
+    }
+
+    input[type="checkbox"] {
+      position: relative;
+      cursor: pointer;
+      margin-left: 10%;
+      width: 40px;
+      height: 40px;
+      top: 70px;
+    }
+
+    input[type="checkbox"]:checked+#ETU {
+      opacity: 1.0;
+      background: linear-gradient(to bottom right, #FFD197, 60%, #F7FF97);
+      transition: 1s ease;
+    }
+
+    .button-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+      height: 80px;
+    }
+
+    button:hover,
+    button:focus {
+      opacity: 1;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      transition: 0.1s ease;
+    }
+
+    button:active {
+      opacity: 0.8;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+      transition: 0.1s ease;
+    }
+  </style>
+
+</body>
+
+</html>

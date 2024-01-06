@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Raleway", sans-serif
+    }
+  </style>
+</head>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+    title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main">
+
+    <!-- Header -->
+    <header id="portfolio">
+      <a href="/Echanges.html"><i class="fa fa-remove w3-right w3-margin w3-hover-opacity"
+          style="font-size:30px;"></i></a>
+      <a href="/Echanges.html"><img
+          src="https://tse1.mm.bing.net/th?id=OIP.FLOndSWGXikVhf2p-DsdzwHaDL&pid=Api&P=0&h=180"
+          style="width:100px; margin:20px" class="w3-round"></a>
+      <div class="w3-container w3-section w3-bottombar w3-padding-16">
+        <h2 style="margin:0 10% 50px 10%; text-align:center">Sélectionnez les tuteurs avec qui échanger les étudiants
+          choisis puis
+          cliquez sur<br><b>"Demander un échange"</b></h2>
+      </div>
+    </header>
+    <div class="w3-container">
+      <form class="w3-right">
+        <b><span class="w3-margin-right">Contraintes :</span></b>
+        <a onclick="updateBtn2()" value="white" id="i2"><button id="btn2" class="w3-pale-red w3-button"
+            type="button">Nombre de stages<i class="fa fa-sort-amount-desc fa-fw w3-margin-left"
+              id="desc"></i></button></a>
+      </form>
+      <h4>Tuteurs IUT (329)</h4>
+    </div>
+    <hr>
+
+    <div class="button-container">
+      <a href="/ValidationE.html" title="Assigner ces élèves"><button id="assign"><i
+            class="fa fa-exchange w3-margin-right" style="font-size:20px"></i>Demander un échange</button></a>
+    </div>
+
+    <!-- First Photo Grid-->
+    <input type="checkbox" />
+    <div class="w3-margin-bottom" style="margin-left:20%" id="ETU">
+      <div class="w3-row w3-container w3-margin-bottom" id="Etudiants">
+        <div class="w3-container w3-third">
+          <img src="https://cdn.pixabay.com/photo/2023/01/26/08/21/office-7745317_1280.png" alt="Norway"
+            style="width:40%">
+          <b style="white-space:nowrap">Yves Dubois</b>
+        </div>
+        <div class="w3-container w3-third w3-padding">
+          <br>
+          <p style="margin-left:30px">Ville : <b>Paris</b></p>
+        </div>
+        <div class="w3-container w3-third">
+          <p>Veut suivre <b style="font-size:17px;">4</b> stages<br>Suit déjà <b style="font-size:17px;">1</b> stage</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Photo Grid-->
+    <input type="checkbox" />
+    <div class="w3-margin-bottom" style="margin-left:20%" id="ETU">
+      <div class="w3-row w3-container w3-margin-bottom" id="Etudiants">
+        <div class="w3-container w3-third">
+          <img src="https://cdn.pixabay.com/photo/2018/08/28/13/29/avatar-3637561_1280.png" alt="Norway"
+            style="width:40%">
+          <b style="white-space:nowrap">Lucien Botrel</b>
+        </div>
+        <div class="w3-container w3-third w3-padding">
+          <br>
+          <p style="margin-left:30px">Ville : <b>Paris</b></p>
+        </div>
+        <div class="w3-container w3-third">
+          <p>Veut suivre <b style="font-size:17px;">2</b> stages<br>Suit déjà <b style="font-size:17px;">0</b> stage</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third Photo Grid-->
+    <input type="checkbox" />
+    <div class="w3-margin-bottom" style="margin-left:20%" id="ETU">
+      <div class="w3-row w3-container w3-margin-bottom" id="Etudiants">
+        <div class="w3-container w3-third">
+          <img src="https://cdn.pixabay.com/photo/2017/01/31/21/23/avatar-2027367_640.png" alt="Norway"
+            style="width:40%">
+          <b style="white-space:nowrap">Corinne Descombes</b>
+        </div>
+        <div class="w3-container w3-third w3-padding">
+          <br>
+          <p style="margin-left:30px">Ville : <b>Paris</b></p>
+        </div>
+        <div class="w3-container w3-third">
+          <p>Veut suivre <b style="font-size:17px;">3</b> stages<br>Suit déjà <b style="font-size:17px;">1</b> stage</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fourth Photo Grid-->
+    <input type="checkbox" />
+    <div class="w3-margin-bottom" style="margin-left:20%" id="ETU">
+      <div class="w3-row w3-container w3-margin-bottom" id="Etudiants">
+        <div class="w3-container w3-third">
+          <img src="https://cdn.pixabay.com/photo/2014/04/03/10/32/businessman-310819_640.png" alt="Norway"
+            style="width:40%">
+          <b style="white-space:nowrap">Christophe Boudon</b>
+        </div>
+        <div class="w3-container w3-third w3-padding">
+          <br>
+          <p style="margin-left:30px">Ville : <b>Paris</b></p>
+        </div>
+        <div class="w3-container w3-third">
+          <p>Veut suivre <b style="font-size:17px;">1</b> stages<br>Suit déjà <b style="font-size:17px;">0</b> stage</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fifth Photo Grid-->
+    <input type="checkbox" />
+    <div class="w3-margin-bottom" style="margin-left:20%" id="ETU">
+      <div class="w3-row w3-container w3-margin-bottom" id="Etudiants">
+        <div class="w3-container w3-third">
+          <img src="https://cdn.pixabay.com/photo/2018/08/28/14/09/avatar-3637645_640.png" alt="Norway"
+            style="width:40%">
+          <b style="white-space:nowrap">Éléonore Choquet</b>
+        </div>
+        <div class="w3-container w3-third w3-padding">
+          <br>
+          <p style="margin-left:30px">Ville : <b>Paris</b></p>
+        </div>
+        <div class="w3-container w3-third">
+          <p>Veut suivre <b style="font-size:17px;">2</b> stages<br>Suit déjà <b style="font-size:17px;">1</b> stage</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="w3-center w3-padding-32">
+      <div class="w3-bar">
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+        <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-dark-grey">
+      <div class="w3-row-padding">
+        <div class="w3-third">
+          <h3>FOOTER</h3>
+          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue
+            gravida diam non fringilla.</p>
+          <p>Powered by Samy and Nolan</p>
+        </div>
+
+        <div class="w3-third">
+          <h3>BLOG POSTS</h3>
+          <ul class="w3-ul w3-hoverable">
+            <li class="w3-padding-16">
+              <img src="https://cdn.pixabay.com/photo/2013/03/30/00/10/news-97862_1280.png"
+                class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Lorem</span>
+              <span>Sed mattis nunc</span>
+            </li>
+            <li class="w3-padding-16">
+              <img src="https://cdn.pixabay.com/photo/2013/07/12/15/50/memo-150388_640.png"
+                class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Ipsum</span><br>
+              <span>Praes tinci sed</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="w3-third">
+          <h3>POPULAR TAGS</h3>
+          <p>
+            <span class="w3-tag w3-grey w3-small w3-margin-bottom">Travel</span> <span
+              class="w3-tag w3-grey w3-small w3-margin-bottom">New York</span> <span
+              class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
+            <span class="w3-tag w3-grey w3-small w3-margin-bottom">IKEA</span> <span
+              class="w3-tag w3-grey w3-small w3-margin-bottom">NORWAY</span> <span
+              class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
+            <span class="w3-tag w3-grey w3-small w3-margin-bottom">Ideas</span> <span
+              class="w3-tag w3-grey w3-small w3-margin-bottom">Baby</span> <span
+              class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
+            <span class="w3-tag w3-grey w3-small w3-margin-bottom">News</span> <span
+              class="w3-tag w3-grey w3-small w3-margin-bottom">Clothing</span> <span
+              class="w3-tag w3-grey w3-small w3-margin-bottom">Shopping</span>
+            <span class="w3-tag w3-grey w3-small w3-margin-bottom">Sports</span> <span
+              class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
+          </p>
+        </div>
+
+      </div>
+    </footer>
+
+    <div class="w3-black w3-center w3-padding-24">Réalisé par Samy et Nolan</div>
+
+    <!-- End page content -->
+  </div>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Script to add filters
+
+    var btn2 = document.getElementById("btn2");
+    var i2 = document.getElementById("i2");
+
+    function updateBtn2() {
+      if (i2.value == "white") {
+        btn2.className = "w3-button w3-pale-red";
+        desc.className = "fa fa-sort-amount-desc fa-fw w3-margin-left";
+        i2.value = "black";
+      } else {
+        btn2.className = "w3-button w3-red";
+        desc.className = "fa fa-sort-amount-asc fa-fw w3-margin-left";
+        i2.value = "white";
+      }
+    }
+
+  </script>
+
+  <style>
+    .hove {
+      padding: 5px;
+    }
+
+    .hove:hover {
+      box-shadow: -10px 10px 15px grey;
+      transition: 0.3s ease;
+    }
+
+    #assign {
+      border-radius: 20% / 50%;
+      background: #FF2929;
+      color: white;
+      padding: 20px 30px 20px 30px;
+      border: none;
+    }
+
+    #ETU {
+      opacity: 0.6;
+      padding-top: 10px;
+      border-radius: 30% 0 0 30% / 60% 0 0 60%;
+    }
+
+    input[type="checkbox"] {
+      position: relative;
+      cursor: pointer;
+      margin-left: 10%;
+      width: 40px;
+      height: 40px;
+      top: 70px;
+    }
+
+    input[type="checkbox"]:checked+#ETU {
+      opacity: 1.0;
+      background: linear-gradient(to bottom right, #FFD197, 60%, #F7FF97);
+      transition: 1s ease;
+    }
+
+    .button-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+      height: 80px;
+    }
+
+    button:hover,
+    button:focus {
+      opacity: 1;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      transition: 0.1s ease;
+    }
+
+    button:active {
+      opacity: 0.8;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+      transition: 0.1s ease;
+    }
+  </style>
+
+</body>
+
+</html>

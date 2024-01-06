@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main">
+
+    <!-- Header -->
+    <header id="portfolio">
+      <a href="/Etudiants.html"><i class="fa fa-remove w3-right w3-margin w3-hover-opacity"
+          style="font-size:30px;"></i></a>
+      <a href="/Etudiants.html"><img
+          src="https://tse1.mm.bing.net/th?id=OIP.FLOndSWGXikVhf2p-DsdzwHaDL&pid=Api&P=0&h=180" style="width:100px"
+          class=" w3-margin w3-round"></a>
+    </header>
+
+    <body>
+      <div class="center">
+        <div class="contacts">
+          <i class="fa fa-bars fa-2x"></i>
+          <h2>
+            Contacts
+          </h2>
+          <div class="contact">
+            <div class="pic noham"></div>
+            <div class="badge">
+              14
+            </div>
+            <div class="name">
+              Noham Geoffroy
+            </div>
+            <div class="message">
+              Bonjour, pensez-vous que ce stage me conviendrait ?
+            </div>
+          </div>
+          <div class="contact">
+            <div class="pic emma"></div>
+            <div class="name">
+              Emma Claude
+            </div>
+            <div class="message">
+              J'aimerais bien oui, merci beaucoup !
+            </div>
+          </div>
+          <div class="contact">
+            <div class="pic odile"></div>
+            <div class="badge">
+              1
+            </div>
+            <div class="name">
+              Odile Léandre
+            </div>
+            <div class="message">
+              J'ai postulé au stage que vous m'avez envoyé et je l'ai eu !
+            </div>
+          </div>
+          <div class="contact">
+            <div class="pic remy"></div>
+            <div class="name">
+              Rémy Morgan
+            </div>
+            <div class="badge">
+              3
+            </div>
+            <div class="message">
+              C'est le troisième auquel je postule.
+            </div>
+          </div>
+          <div class="contact">
+            <div class="pic marie"></div>
+            <div class="badge">
+              2
+            </div>
+            <div class="name">
+              Marie Paula
+            </div>
+            <div class="message">
+              Encore merci, bonne journée
+            </div>
+          </div>
+        </div>
+        <div class="chat">
+          <div class="contact bar">
+            <div class="pic emma2"></div>
+            <div class="name">
+              Emma Claude
+            </div>
+            <div class="seen">
+              Today at 12:56
+            </div>
+          </div>
+          <div class="messages" id="chat">
+            <div class="time">
+              Today at 11:41
+            </div>
+            <div class="message" id="parker">
+              Bonjour Emma ! 👋 <br>Où en es-tu dans ta recherche de stage ?
+            </div>
+            <div class="message emma2">
+              Bonjour, J'ai trouvé 2 stages mais l'un d'eux ne correspond pas à tous mes critères malheuresement.
+            </div>
+            <div class="message" id="parker">
+              Tu y as postulé déjà ?
+            </div>
+            <div class="message" id="parker">
+              Si tu veux j'ai trouvé un stage qui te correspondrait en Bases de Données.
+            </div>
+            <div class="message emma2">
+              Oui, j'attends leur réponse.
+            </div>
+            <div class="message emma2">
+              J'aimerais bien oui, merci beaucoup !
+            </div>
+            <div class="message emma2">
+              <div class="typing typing-1"></div>
+              <div class="typing typing-2"></div>
+              <div class="typing typing-3"></div>
+            </div>
+          </div>
+          <div class="input">
+            <i class="fa fa-camera" id="icons" style="font-size:20px"></i>
+            <i class="material-icons" id="icons" style="margin:20px 0px 0px 0;">mood</i>
+            <input placeholder="Entrez votre message" type="text" id="input" />
+            <i class="fa fa-microphone" id="icons" style="margin:0 0 0 5px; font-size:20px"></i>
+          </div>
+        </div>
+      </div>
+    </body>
+
+    <!-- End page content -->
+  </div>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+    var chat = document.getElementById('chat');
+    chat.scrollTop = chat.scrollHeight - chat.clientHeight;
+
+  </script>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Red+Hat+Display:400,500,900&display=swap");
+
+    $text-1: #333;
+    $text-2: #666;
+    $text-3: #999;
+    $line: #ccc;
+    $time-bg: #eee;
+    $background: #f7f7f7;
+
+    body,
+    html {
+      font-family: Red hat Display, sans-serif;
+      font-weight: 400;
+      line-height: 1.25em;
+      letter-spacing: 0.025em;
+      color: #2D2D2D;
+      background: $background;
+    }
+
+    .center {
+      position: absolute;
+      top: 60%;
+      right: 20%;
+      transform: translate(-50%, -50%);
+    }
+
+    .pic {
+      width: 4rem;
+      height: 4rem;
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+    }
+
+    .contact {
+      position: relative;
+      margin-bottom: 1rem;
+      padding-left: 5rem;
+      height: 4.5rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contact>.pic {
+      position: absolute;
+      left: 0;
+    }
+
+    .contact>.name {
+      font-weight: 500;
+      margin-bottom: 0.125rem;
+    }
+
+    .contact>.message,
+    .contact>.seen {
+      font-size: 0.9rem;
+      color: #2D2D2D;
+    }
+
+    .contact>.badge {
+      box-sizing: border-box;
+      position: absolute;
+      width: 1.5rem;
+      height: 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+      padding-top: 0.125rem;
+      border-radius: 1rem;
+
+      top: 0;
+      left: 2.5rem;
+      background: #2D2D2D;
+      color: white;
+    }
+
+    .contacts {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-6rem, -50%);
+
+      width: 24rem;
+      height: 32rem;
+      padding: 1rem 2rem 1rem 1rem;
+      box-sizing: border-box;
+      border-radius: 1rem 0 0 1rem;
+
+      cursor: pointer;
+
+      background: white;
+      box-shadow: 0 0 8rem 0 rgba(black, 0.1), 2rem 2rem 4rem -3rem rgba(black, 0.5);
+
+      transition: transform 500ms;
+    }
+
+    .contacts>h2 {
+      margin: 0.5rem 0 1.5rem 5rem;
+    }
+
+    .contacts>.fa-bars {
+      position: absolute;
+      left: 2.25rem;
+
+      color: #2D2D2D;
+      transition: color 200ms;
+    }
+
+    .contacts:hover {
+      transform: translate(-23rem, -50%);
+    }
+
+    .contacts>.contact:last-child {
+      margin: 0;
+    }
+
+    .contacts:hover {
+      transform: translate(-23rem, -50%);
+    }
+
+    .chat {
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      width: 24rem;
+      height: 38rem;
+      z-index: 2;
+      box-sizing: border-box;
+      border-radius: 1rem;
+
+      background: white;
+      box-shadow: 0 0 8rem 0 rgba(black, 0.1), 0rem 2rem 4rem -3rem rgba(black, 0.5);
+    }
+
+    .chat>.contact.bar {
+      flex-basis: 3.5rem;
+      flex-shrink: 0;
+      margin: 1rem;
+      box-sizing: border-box;
+    }
+
+    .chat>.messages {
+      padding: 1rem;
+      background: $background;
+      flex-shrink: 2;
+      overflow-y: auto;
+
+      box-shadow: inset 0 2rem 2rem -2rem rgba(black, 0.05),
+        inset 0 -2rem 2rem -2rem rgba(black, 0.05);
+    }
+
+    .chat>.messages>.time {
+      font-size: 0.8rem;
+      background: $time-bg;
+      padding: 0.25rem 1rem;
+      border-radius: 2rem;
+      color: $text-3;
+      width: fit-content;
+      margin: 0 auto;
+    }
+
+    .chat>.messages>.message {
+      box-sizing: border-box;
+      padding: 0.5rem 1rem;
+      margin: 1rem;
+      background: linear-gradient(to bottom left, #ADADAD, 70%, #CCCCCC);
+      border-radius: 1.125rem 1.125rem 1.125rem 0;
+      min-height: 2.25rem;
+      width: fit-content;
+      max-width: 66%;
+
+      box-shadow: 0 0 2rem rgba(black, 0.075),
+        0rem 1rem 1rem -1rem rgba(black, 0.1);
+    }
+
+    #parker {
+      margin: 1rem 1rem 1rem auto;
+      border-radius: 1.125rem 1.125rem 0 1.125rem;
+      background: linear-gradient(to bottom right, #D60000, 70%, #FF5D5D);
+      color: white;
+    }
+
+    .chat>.messages>.message>.typing {
+      display: inline-block;
+      width: 0.8rem;
+      height: 0.8rem;
+      margin-right: 0rem;
+      box-sizing: border-box;
+      background: #ccc;
+      border-radius: 50%;
+    }
+
+    .chat>.messages>.message>.typing>.typing-1 {
+      animation: typing 3s infinite;
+    }
+
+    .chat>.messages>.message>.typing>.typing-2 {
+      animation: typing 3s 250ms infinite;
+    }
+
+    .chat>.messages>.message>.typing>.typing-3 {
+      animation: typing 3s 500ms infinite;
+    }
+
+    .input {
+      box-sizing: border-box;
+      flex-basis: 4rem;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      padding: 0 0.5rem 0 1.5rem;
+    }
+
+    .input>i {
+      font-size: 1.5rem;
+      margin-right: 1rem;
+      color: $text-2;
+      cursor: pointer;
+      transition: color 200ms;
+    }
+
+    .input>i:hover {
+      color: $text-1;
+    }
+
+    input {
+      border: none;
+      background-image: none;
+      background-color: white;
+      padding: 0.5rem 1rem;
+      margin-right: 1rem;
+      border-radius: 1.125rem;
+      margin-bottom: 5px;
+      flex-grow: 2;
+      width: 50%;
+      box-shadow: 0 0 1rem rgba(black, 0.1), 0rem 1rem 1rem -1rem rgba(black, 0.2);
+
+      font-family: Red hat Display, sans-serif;
+      font-weight: 400;
+      letter-spacing: 0.025em;
+    }
+
+    input:placeholder {
+      color: $text-3;
+    }
+
+    #input {
+      border: none;
+      background-image: none;
+      background-color: white;
+      padding: 0.5rem 1rem;
+      margin-right: 1rem;
+      border-radius: 1.125rem;
+      flex-grow: 2;
+      box-shadow: 0 0 1rem rgba(black, 0.1), 0rem 1rem 1rem -1rem rgba(black, 0.2);
+
+      font-family: Red hat Display, sans-serif;
+      font-weight: 400;
+      letter-spacing: 0.025em;
+    }
+
+    #icons {
+      opacity: 0.6;
+    }
+
+    #icons:hover,
+    #icons:focus {
+      opacity: 1;
+      transition: 0.1s ease;
+    }
+
+    #icons:active {
+      opacity: 0.8;
+      transition: 0.1s ease;
+    }
+
+    @keyframes typing {
+
+      0%,
+      75%,
+      100% {
+        transform: translate(0, 0.25rem) scale(0.9);
+        opacity: 0.5;
+      }
+
+      25% {
+        transform: translate(0, -0.25rem) scale(1);
+        opacity: 1;
+      }
+    }
+
+    .pic.emma {
+      background-image: url("https://cdn.pixabay.com/photo/2014/03/25/16/54/user-297566_640.png");
+    }
+
+    .pic.emma2 {
+      background-image: url("https://cdn.pixabay.com/photo/2014/03/24/17/19/teacher-295387_640.png");
+    }
+
+    .pic.noham {
+      background-image: url("https://cdn.pixabay.com/photo/2017/01/31/21/23/avatar-2027366_1280.png");
+    }
+
+    .pic.odile {
+      background-image: url("https://cdn.pixabay.com/photo/2023/03/15/09/32/woman-7854120_1280.png");
+    }
+
+    .pic.remy {
+      background-image: url("https://cdn.pixabay.com/photo/2017/01/31/21/22/avatar-2027363_1280.png");
+    }
+
+    .pic.marie {
+      background-image: url("https://cdn.pixabay.com/photo/2023/02/16/10/14/woman-7793451_1280.png");
+    }
+  </style>
+
+</body>
+
+</html>
