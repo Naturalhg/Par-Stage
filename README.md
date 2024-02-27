@@ -25,6 +25,7 @@ Si vous avez des retours, contactez moi à cette adresse : nolan.toussaint77@gma
 ## Authors
 
 - [@Nolan](https://github.com/Naturalhg)
+- Samy
 
 ## License
 
