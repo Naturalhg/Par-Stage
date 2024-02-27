@@ -1,4 +1,4 @@
-# Par-Stage
+# UPEC
 
 Ce site est un simple squelette (front-end uniquement) de ce à quoi peut ressembler une extension du site de l'UPEC ayant pour but de faciliter le travail des responsables de stage ainsi que des tuteurs de stage tout au long du processus de recherche et d'accompagnement de stage des élèves.
 
